@@ -35,6 +35,10 @@ SWITCH (Sntns[NbrOfCrc]) DO //read sentence caracter bu caracter
             NbrOfCrc:=NbrOfCrc+1;
             NbrOfWrd:=NbrOfWrd+1;
             BREAK;
+     case "." : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfWrd:=NbrOfWrd+1;
+            BREAK;           
     default : NbrOfCrc:=NbrOfCrc+1;
 END_SWITCH
 UNTIL (Sntns[NbrOfCrc-1] <> ".")
