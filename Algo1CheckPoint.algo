@@ -39,3 +39,4 @@ SWITCH (Sntns[NbrOfCrc]) DO //read sentence caracter bu caracter
 END_SWITCH
 UNTIL (Sntns[NbrOfCrc-1] <> ".")
 WRITE("Sentence is composed from " + NbrOfCrc + "caracters," + NbrOfVls +"vowels, "+ NbrOfWrd + "words");
+END BEGEN
