@@ -6,7 +6,7 @@ BEGEN
 WRITE(Entrer une phrase complete qui se termine par ".")
 Sntns:= Read input;
 REPEAT
-SWITCH (Sntns[NbrOfCrc]) DO
+SWITCH (Sntns[NbrOfCrc]) DO //read sentence caracter bu caracter
     case "a" : 
         NbrOfCrc:=NbrOfCrc+1;
         NbrOfVls:=NbrOfVls+1;
