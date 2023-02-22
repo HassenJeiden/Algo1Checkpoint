@@ -1,0 +1,41 @@
+ALGORITHM SintenseAnalise
+var
+NbrOfCrc:=0,NbrOfWrd:=0,NbrOfVls:=0: INTEGER;
+Sntns:STRING;
+BEGEN
+WRITE(Entrer une phrase complete qui se termine par ".")
+Sntns:= Read input;
+REPEAT
+SWITCH (Sntns[NbrOfCrc]) DO
+    case "a" : 
+        NbrOfCrc:=NbrOfCrc+1;
+        NbrOfVls:=NbrOfVls+1;
+        BREAK;
+    case "e" : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfVls:=NbrOfVls+1;
+            BREAK;
+    case "y" : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfVls:=NbrOfVls+1;
+            BREAK;
+    case "u" : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfVls:=NbrOfVls+1;
+            BREAK;
+    case "i" : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfVls:=NbrOfVls+1;
+            BREAK;
+    case "o" : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfVls:=NbrOfVls+1;
+            BREAK;
+    case " " : 
+            NbrOfCrc:=NbrOfCrc+1;
+            NbrOfWrd:=NbrOfWrd+1;
+            BREAK;
+    default : NbrOfCrc:=NbrOfCrc+1;
+END_SWITCH
+UNTIL (Sntns[NbrOfCrc-1] <> ".")
+WRITE("Sentence is composed from " + NbrOfCrc + "caracters," + NbrOfVls +"vowels, "+ NbrOfWrd + "words");
